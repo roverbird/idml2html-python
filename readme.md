@@ -2,17 +2,15 @@
 
 Managing a large archive of **InDesign** files created for print and transitioning them into a web format is a significant challenge for publishers, media organizations, and content managers. Traditional workflows are often built for print production, without online publication in mind, making systematic extraction of text and images for internet use a time-consuming and a complex task.
 
-The good news? This process can be automated. Managing a large archive of **InDesign** files and converting them to a web-friendly format can be challenging, especially with workflows designed for print. Extracting text and images for online use can be time-consuming without the right tools.
+The good news? This IDML conversion script automates the process, ensuring a structured and consistent extraction workflow. While the script is customizable, it is can be too generic for your particular case. I strongly recommend writing me for assistance, as every publishing workflow is unique. A tailored solution can help avoid inefficiencies and errors that can arise from manual extraction.
 
-My IDML conversion script automates this process, ensuring a structured and consistent extraction workflow. While the script is customizable, I strongly recommend writing us for assistance, as every publishing workflow is unique. A tailored solution can help avoid inefficiencies and errors that can arise from manual extraction.
+With experience in IDML, PDF, DOCX, and other formats, I don’t just offer batch processing scripts—I will assess your workflow and provide a solution that enhances efficiency and reduces content management costs. I will analyze your entire process to create a cost-efficient system that integrates offline media with digital publishing needs, help make your archive searchable, organized, and future-proof. In case, you only require to convert a large volume of files, we will do just that! 
 
-With experience in IDML, PDF, DOCX, and other formats, I don’t just offer batch processing scripts—I assess your workflow and provide a solution that enhances efficiency and reduces content management costs. I will analyze your entire process to create a cost-efficient system that integrates offline media with digital publishing needs, help make your archive searchable, organized, and future-proof.
+So, if you need guidance on adapting these scripts or want to explore a customized, automated workflow, feel free to reach out. Let’s work together to optimize _your_ unique content management strategy! Almost every organization and media outlet has room for improvement in digitalization of content. Legacy formats, unsearchable archives, zoos of weakly compatible systems are common woes, but fear not, you are not alone. 
 
-If you need guidance on adapting these scripts or want to explore a customized, automated workflow, feel free to reach out. Let’s work together to optimize _your_ unique content management strategy! Almost every organization and media outlet has room for improvement in digitalization of content. Legacy formats, unsearchable archives, zoos of weakly compatible systems are common woes, but fear not, you are not alone. 
+📧 [Contact today to get consultation](mailto:a.sotov@yahoo.co.uk)
 
-📧 [Contact today](mailto:a.sotov@yahoo.co.uk)
-
-For an online demo, try <a href="https://textvisualization.app/idml2html/">Free Online IDML2HTML Converter<>
+For an online demo, try <a href="https://textvisualization.app/idml2html/">Free Online IDML2HTML Converter</a>.
 
 # What is included into this repo?
 
