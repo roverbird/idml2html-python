@@ -1,19 +1,30 @@
-# IDML to HTML Convertion workflow
+# IDML to HTML Convertion Tools
 
 Managing a large archive of **InDesign** files created for print and transitioning them into a web format is a significant challenge for publishers, media organizations, and content managers. Traditional workflows are often built for print production, without online publication in mind, making systematic extraction of text and images for internet use a time-consuming and a complex task.
 
-The good news? This process can be automated. We’ve developed a python script that does **IDML conversion**, ensuring a structured, consistent, and reliable extraction workflow. You can use and modify it as you need, but we suggest that you contact us for help because every publishing workflow is unique. Without a tailored approach, extracting and repurposing content from **IDML** files can lead to inefficiencies, errors, and increased costs. 
+The good news? This process can be automated. Managing a large archive of **InDesign** files and converting them to a web-friendly format can be challenging, especially with workflows designed for print. Extracting text and images for online use can be time-consuming without the right tools.
 
-We help bridge the gap between traditional print workflows and modern digital content management. With extensive experience in IDML, PDF, DOCX, and numerous other structred and semi-structured formats, we don’t just offer conversion scripts—we analyze your workflow and provide a future-proof solution that improves efficiency and reduces content management costs.
+My IDML conversion script automates this process, ensuring a structured and consistent extraction workflow. While the script is customizable, I strongly recommend writing us for assistance, as every publishing workflow is unique. A tailored solution can help avoid inefficiencies and errors that can arise from manual extraction.
 
-This is more than just batch-processing an archive. We take a holistic approach to your content workflow, evaluating your entire process to design an optimized, cost-efficient system that integrates offline media with your digital publishing needs. Imagine a user-friendly document flow—from authors to editors, then directly to a cloud content delivery network (CDN) and a publishing publishing house, print-ready—all in one process. Your entire archive (including legacy content) becomes structured, searchable, and discoverable, ensuring long-term content management efficiency. We’ll help you build a future-proof workflow that enhances productivity and keeps your content organized.
+With experience in IDML, PDF, DOCX, and other formats, I don’t just offer batch processing scripts—I assess your workflow and provide a solution that enhances efficiency and reduces content management costs. I will analyze your entire process to create a cost-efficient system that integrates offline media with digital publishing needs, help make your archive searchable, organized, and future-proof.
 
 If you need guidance on adapting these scripts or want to explore a customized, automated workflow, feel free to reach out. Let’s work together to optimize _your_ unique content management strategy! Almost every organization and media outlet has room for improvement in digitalization of content. Legacy formats, unsearchable archives, zoos of weakly compatible systems are common woes, but fear not, you are not alone. 
 
 📧 [Contact today](mailto:a.sotov@yahoo.co.uk)
 
+For an online demo, try <a href="https://textvisualization.app/idml2html/">Free Online IDML2HTML Converter<>
+
 # What is included into this repo?
-# unzip.sh
+
+## Javascript implementation
+
+Standalone JS implementation (javascript idml2html converter as a client-side web app that runs in the browser) is in js folder. Demo version: https://textvisualization.app/idml2html/
+
+## Python implementation
+
+Python implementation is in python folder.
+
+### unzip.sh
 
 Before running the Python script, you need to **unzip the IDML files**, and unzip.sh shell script helps with that process. It prepares IDML files for conversion:
 
@@ -49,7 +60,7 @@ Before running the Python script, you need to **unzip the IDML files**, and unzi
    python idml2txt.py /path/to/idml_file
    ```
 
-# idml2html.py
+### idml2html.py
 This python script is part of a workflow for converting IDML (InDesign Markup Language) files into HTML. It is specifically designed as a utility for a publishing house, helping to extract structured content and images from IDML files.
 
 ## What is an IDML File?

@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="generator" content="Hugo 0.54.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Convert IDML to HTML">
+    <meta property="og:title" content="ChatGPT Detector">
+    <meta itemprop="name" content="ChatGPT Detector">
+    <meta property="og:url" content="https://textvisualization.app/idml2html/">
+    <meta property="og:image" content="https://textvisualization.app/img/back3.webp">
+    <meta itemprop="image" content="https://textvisualization.app/img/back3.webp">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="fb:admins" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://textvisualization.app">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image" content="https://textvisualization.app/img/back3.webp">
+    <meta name="twitter:domain" content="https://textvisualization.app">
+    <meta property="og:description" content="Convert IDML to HTML">
+    <meta name="description" content="Convert IDML to HTML">
+    <meta name="DC.Description" content="Convert IDML to HTML">
+    <meta name="twitter:description" content="Convert IDML to HTML">
+    <meta itemprop="description" content="Convert IDML to HTML">
+    <meta name="DC.Title" content="Convert IDML to HTML">
+    <meta name="twitter:title" content="Convert IDML to HTML">
+    <meta name="DC.Creator" content="Convert IDML to HTML">
+    <meta itemprop="author" content="Convert IDML to HTML">
+    <meta name="DC.Type" content="Text">
+    <meta name="DC.Format" content="text/html">
+    <meta name="DC.Language" content="en_US">
+    <meta http-equiv="content-language" content="en-US">
+    <link rel="canonical" href="https://textvisualization.app/idml2html/">
+    <title>Free IDML Convterter</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+    <style>
+        .hero.is-info.is-bold {
+            background: linear-gradient(to right, #ff0000, #ff9900, #ffcc00, #33cc33, #3e8ed0, #cc33ff);
+            background-size: 600% 600%;
+            animation: gradientAnimation 30s ease infinite
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0
+            }
+
+            50% {
+                background-position: 100%
+            }
+
+            100% {
+                background-position: 0
+            }
+        }
+
+        .card-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #f17c7c, #f5b64b, #f8d648, #a0de77, #6ab7ff, #c991e1);
+            opacity: .8;
+            z-index: 1
+        }
+
+        .card-image img {
+            position: relative;
+            z-index: 2
+        }
+
+        .card-content {
+            background-color: #f5f5f5
+        }
+
+        .is-shady {
+            animation: flyintoright .4s backwards;
+            background: #fff;
+            box-shadow: rgba(0, 0, 0, .1) 0 1px 0;
+            border-radius: 4px;
+            display: inline-block;
+            position: relative;
+            transition: all .2s ease-in-out
+        }
+
+        .is-shady:hover {
+            box-shadow: 0 10px 16px rgba(0, 0, 0, .13), 0 6px 6px rgba(0, 0, 0, .19)
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://textvisualization.app/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://textvisualization.app/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://textvisualization.app/favicon-16x16.png">
+    <link rel="manifest" href="https://textvisualization.app/site.webmanifest">
+    <link rel="mask-icon" href="https://textvisualization.app/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+  <style>
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+  </style>
+
+
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0B4W23KH9S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0B4W23KH9S');
+</script>
+
+<body>
+
+    <section class="hero is-info is-medium is-bold">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="https://textvisualization.app/">
+                            <big>Semascope 👁️</big>
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li><a href="https://textvisualization.app/idml2html/"><b>ChatGPT Detector</b></a></li>
+                                    <li><a href="https://textvisualization.app/free-online-keyword-extractor/">Keyword Extractor</a></li>
+                                    <li><a href="https://textvisualization.app/hugo-yaml-markdown-generator/">Hugo Markdown Editor</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">Free IDML to HTML Converter</h1>
+            <p class="subtitle has-text-centered">Upload an IDML file to extract content and convert it to HTML. Works with Google Chrome. Wait after uploads.</p>
+
+            <p class="subtitle has-text-centered"> If you need to convert thousands of files (IDML, PDF, DOC, HTML archives) into nicely formatted web-ready content, please <a href="mailto:a.sotov@yahoo.co.uk">write</a>. I will optimize your unique content management workflow, remove any formatting-related noise from input files, and create custom automation to prepare your old content for the web. Legacy formats, unsearchable archives, zoos of weakly compatible systems are common woes, but fear not, you are not alone.</p>
+
+            <p class="subtitle has-text-centered">This app is available for free, copy and modify it as needed. Please, star my <a href="https://github.com/roverbird/idml2html-python/">repo</a>.</p>
+
+            <p class="subtitle has-text-centered"> I am available for <a href="https://www.linkedin.com/in/alexander-sotov/">hire</a>.</p>
+
+            <div class="file has-name is-boxed is-centered">
+                <label class="file-label">
+                    <input class="file-input" type="file" id="upload" accept=".idml">
+                    <span class="file-cta">
+                        <span class="file-icon">
+                            <i class="fas fa-upload"></i>
+                        </span>
+                        <span class="file-label">Choose an IDML file...</span>
+                    </span>
+                    <span id="file-name" class="file-name">No file selected</span>
+                </label>
+            </div>
+
+            <div class="column is-12 mt-3">
+                <progress id="loadingProgress" class="progress is-primary" value="0" max="100" style="display: none;"></progress>
+            </div>
+
+            <div class="buttons is-centered mt-4">
+                <button class="button is-primary" id="download" style="display: none;">
+                    <i class="fas fa-download"></i> Download HTML
+                </button>
+                <button class="button is-light" id="view" style="display: none;">
+                    <i class="fas fa-eye"></i> View Output
+                </button>
+            </div>
+            <div class="content mt-4" id="output"></div>
+
+            <p class="subtitle has-text-centered">Built and maintained by <br><a href="https://github.com/roverbird"><img src="https://coalmillsafety.com/img/logo-s-small.svg"></a></small></p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    
+    <!-- Import DeepIDML.js and Converter.js as Modules -->
+<script type="module">
+    import './converter.js';  // Import the converter.js
+</script>
+
+
+    <script>
+        // Update file name display when a file is chosen
+        document.getElementById("upload").addEventListener("change", function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                document.getElementById("file-name").textContent = file.name;
+                document.getElementById("loadingProgress").style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
+
