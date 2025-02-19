@@ -1,4 +1,4 @@
-# IDML to HTML Convertion Tools
+# IDML to HTML Conversion Tools
 
 Managing a large archive of **InDesign** files created for print and transitioning them into a web format is a significant challenge for publishers, media organizations, and content managers. Traditional workflows are often built for print production, without online publication in mind, making systematic extraction of text and images for internet use a time-consuming and a complex task.
 
