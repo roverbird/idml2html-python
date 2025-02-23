@@ -1,4 +1,16 @@
-# IDML to HTML Conversion Tools
+# Online IDML to HTML Converter
+
+🔗 Free <a href="https://textvisualization.app/idml2html/">**Online converter from InDesign IDML to HTML / Text**</a>
+
+ IDML2HTML converter works in browser, converts IDML to HTML or text even without InDesign. 
+
+- 🇨🇳 **Chinese**: 在浏览器中运行，即使没有 InDesign 也能将 IDML 转换为 HTML 或文本。
+- 🇫🇷 **French**: Fonctionne dans le navigateur, convertit IDML en HTML ou en texte même sans InDesign.
+- 🇪🇸 **Spanish**: Funciona en el navegador, convierte IDML a HTML o texto incluso sin InDesign.
+- 🇷🇺 **Russian**: Работает в браузере, конвертирует IDML в HTML или текст даже без InDesign.
+- 🇩🇪 **German**: Funktioniert im Browser, konvertiert IDML in HTML oder Text, auch ohne InDesign.
+
+# Batch IDML to HTML Conversion Tools
 
 Managing a large archive of **InDesign** files created for print and transitioning them into a web format is a significant challenge for publishers, media organizations, and content managers. Traditional workflows are often built for print production, without online publication in mind, making systematic extraction of text and images for internet use a time-consuming and a complex task.
 
@@ -8,7 +20,7 @@ With experience in IDML, PDF, DOCX, and other formats, I don’t just offer batc
 
 So, if you need guidance on adapting these scripts or want to explore a customized, automated workflow, feel free to reach out. Let’s work together to optimize _your_ unique content management strategy! Almost every organization and media outlet has room for improvement in digitalization of content. Legacy formats, unsearchable archives, zoos of weakly compatible systems are common woes, but fear not, you are not alone. 
 
-📧 [Contact today to get consultation](mailto:a.sotov@yahoo.co.uk)
+📧 [Contact today to get consultation](mailto:a.sotov@yahoo.co.uk) or let me know if you need any modifications! 😊
 
 For an online demo, try <a href="https://textvisualization.app/idml2html/">Free Online IDML2HTML Converter</a>.
 
