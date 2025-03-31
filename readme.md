@@ -1,8 +1,8 @@
-# Online IDML to HTML Converter
+# Free Online IDML to DOCX, HTML, Text Converter
 
-🔗 Free <a href="https://textvisualization.app/idml2html/">**Online converter from InDesign IDML to HTML / Text**</a>
+🔗 Free <a href="https://textvisualization.app/idml2html/">**online converter from InDesign IDML to DOCX, HTML, Text**</a>
 
- IDML2HTML converter works in browser, converts IDML to HTML or text even without InDesign. 
+ IDML2HTML converter works in browser, converts IDML to Docx, HTML or text even without InDesign. 
 
 - 🇨🇳 **Chinese**: 在浏览器中运行，即使没有 InDesign 也能将 IDML 转换为 HTML 或文本。
 - 🇫🇷 **French**: Fonctionne dans le navigateur, convertit IDML en HTML ou en texte même sans InDesign.
@@ -22,7 +22,7 @@ So, if you need guidance on adapting these scripts or want to explore a customiz
 
 📧 [Contact today to get consultation](mailto:a.sotov@yahoo.co.uk) or let me know if you need any modifications! 😊
 
-For an online demo, try <a href="https://textvisualization.app/idml2html/">Free Online IDML2HTML Converter</a>.
+For an online demo, try <a href="https://textvisualization.app/idml2html/">Free Online IDML2HTML Converter / Convert inDesing to DOCX</a>.
 
 # What is included into this repo?
 

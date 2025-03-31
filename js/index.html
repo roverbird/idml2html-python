@@ -8,9 +8,9 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta property="og:type" content="article">
-    <meta property="og:site_name" content="Convert IDML to HTML">
-    <meta property="og:title" content="ChatGPT Detector">
-    <meta itemprop="name" content="ChatGPT Detector">
+    <meta property="og:site_name" content="Convert IDML to DOCX / HTML">
+    <meta property="og:title" content="Convert IDML to DOCX / HTML">
+    <meta itemprop="name" content="Convert IDML to DOCX / HTML">
     <meta property="og:url" content="https://textvisualization.app/idml2html/">
     <meta property="og:image" content="https://textvisualization.app/img/back3.webp">
     <meta itemprop="image" content="https://textvisualization.app/img/back3.webp">
@@ -22,25 +22,27 @@
     <meta name="twitter:creator" content="">
     <meta name="twitter:image" content="https://textvisualization.app/img/back3.webp">
     <meta name="twitter:domain" content="https://textvisualization.app">
-    <meta property="og:description" content="Convert IDML to HTML">
-    <meta name="description" content="Convert IDML to HTML">
-    <meta name="DC.Description" content="Convert IDML to HTML">
-    <meta name="twitter:description" content="Convert IDML to HTML">
-    <meta itemprop="description" content="Convert IDML to HTML">
-    <meta name="DC.Title" content="Convert IDML to HTML">
-    <meta name="twitter:title" content="Convert IDML to HTML">
-    <meta name="DC.Creator" content="Convert IDML to HTML">
-    <meta itemprop="author" content="Convert IDML to HTML">
+    <meta property="og:description" content="Convert IDML to DOCX / HTML">
+    <meta name="description" content="Convert IDML to DOCX / HTML">
+    <meta name="DC.Description" content="Convert IDML to DOCX / HTML">
+    <meta name="twitter:description" content="Convert IDML to DOCX / HTML">
+    <meta itemprop="description" content="Convert IDML to DOCX / HTML">
+    <meta name="DC.Title" content="Convert IDML to DOCX / HTML">
+    <meta name="twitter:title" content="Convert IDML to DOCX / HTML">
+    <meta name="DC.Creator" content="Convert IDML to DOCX / HTML">
+    <meta itemprop="author" content="Convert IDML to DOCX / HTML">
     <meta name="DC.Type" content="Text">
     <meta name="DC.Format" content="text/html">
     <meta name="DC.Language" content="en_US">
     <meta http-equiv="content-language" content="en-US">
     <link rel="canonical" href="https://textvisualization.app/idml2html/">
-    <title>Free IDML Convterter</title>
+    <title>Free IDML Converter / Convert inDesign to Text, DOCX, HTML without inDesign</title>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <!-- docx converter functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/docx@9.3.0/dist/index.iife.min.js"></script>
 
     <style>
         .hero.is-info.is-bold {
@@ -145,7 +147,7 @@
                         <div class="navbar-end">
                             <div class="tabs is-right">
                                 <ul>
-                                    <li><a href="https://textvisualization.app/idml2html/"><b>ChatGPT Detector</b></a></li>
+                                    <li><a href="https://textvisualization.app/chatgpt-detector/"><b>Humanize ChatGPT Texts</b></a></li>
                                     <li><a href="https://textvisualization.app/free-online-keyword-extractor/">Keyword Extractor</a></li>
                                     <li><a href="https://textvisualization.app/hugo-yaml-markdown-generator/">Hugo Markdown Editor</a></li>
                                 </ul>
@@ -170,14 +172,9 @@
 
     <section class="section">
         <div class="container">
-            <h1 class="title has-text-centered">Free IDML to HTML Converter</h1>
-            <p class="subtitle has-text-centered">Upload an IDML file to extract content and convert it to HTML. Works with Google Chrome. Wait after uploads.</p>
+            <h1 class="title has-text-centered">Free IDML to DOCX, HTML, text Converter</h1>
+            <h1 class="subtitle has-text-centered">View IDML content without inDesign online</h1>
 
-            <p class="subtitle has-text-centered"> If you need to convert thousands of files (IDML, PDF, DOC, HTML archives) into nicely formatted web-ready content, please <a href="mailto:a.sotov@yahoo.co.uk">write</a>. I will optimize your unique content management workflow, remove any formatting-related noise from input files, and create custom automation to prepare your old content for the web. Legacy formats, unsearchable archives, zoos of weakly compatible systems are common woes, but fear not, you are not alone.</p>
-
-            <p class="subtitle has-text-centered">This app is available for free, copy and modify it as needed. Please, star my <a href="https://github.com/roverbird/idml2html-python/">repo</a>.</p>
-
-            <p class="subtitle has-text-centered"> I am available for <a href="https://www.linkedin.com/in/alexander-sotov/">hire</a>.</p>
 
             <div class="file has-name is-boxed is-centered">
                 <label class="file-label">
@@ -198,13 +195,40 @@
 
             <div class="buttons is-centered mt-4">
                 <button class="button is-primary" id="download" style="display: none;">
-                    <i class="fas fa-download"></i> Download HTML
+                    <i class="fas fa-download"></i> HTML
                 </button>
+                <button class="button is-primary" id="downloadDocx" style="display: none;">
+                    <i class="fas fa-download"></i> DOCX
+                </button>
+                <button class="button is-primary" id="downloadPlainText" style="display: none;">
+                    <i class="fas fa-download"></i> DOCX
+                </button>
+
                 <button class="button is-light" id="view" style="display: none;">
                     <i class="fas fa-eye"></i> View Output
                 </button>
             </div>
             <div class="content mt-4" id="output"></div>
+
+
+            <p class="subtitle has-text-centered">Upload inDesing IDML file to extract content and convert it to text, DOCX, HTML.</p>
+
+<p class="subtitle has-text-centered">Загрузите файл InDesign IDML, чтобы конвертировать его в текст, DOCX, HTML.</p>
+
+<p class="subtitle has-text-centered">上传 InDesign IDML 文件以提取内容并转换为文本、DOCX、HTML。</p>
+
+<p class="subtitle has-text-centered">Sube un archivo IDML de InDesign para extraer contenido y convertirlo a texto, DOCX, HTML.</p>
+
+<p class="subtitle has-text-centered">Téléchargez un fichier IDML d'InDesign pour extraire le contenu et le convertir en texte, DOCX, HTML.</p>
+
+<p class="subtitle has-text-centered">Laden Sie eine InDesign-IDML-Datei hoch, um den Inhalt zu extrahieren und in Text, DOCX, HTML zu konvertieren.</p>
+
+            <p class="subtitle has-text-centered">Free, no-registrion online app works with Google Chrome. Wait after uploading your file. If you need to convert thousands of files (IDML, PDF, DOC, HTML archives) into nicely formatted web-ready content, please <a href="mailto:a.sotov@yahoo.co.uk">write</a>. I will optimize your unique content management workflow, remove any formatting-related noise from input files, and create custom automation to prepare your old content for the web. Legacy formats, unsearchable archives, zoos of weakly compatible systems are common woes, but fear not, you are not alone.</p>
+
+            <p class="subtitle has-text-centered">This app is free. Please, star my <a href="https://github.com/roverbird/idml2html-python/">repo</a>.</p>
+
+            <p class="subtitle has-text-centered"> I am available for <a href="https://www.linkedin.com/in/alexander-sotov/">hire</a>.</p>
+
 
             <p class="subtitle has-text-centered">Built and maintained by <br><a href="https://github.com/roverbird"><img src="https://coalmillsafety.com/img/logo-s-small.svg"></a></small></p>
         </div>
@@ -218,7 +242,7 @@
 </script>
 
 
-    <script>
+    <script type="text/javascript">
         // Update file name display when a file is chosen
         document.getElementById("upload").addEventListener("change", function(event) {
             const file = event.target.files[0];
@@ -227,6 +251,19 @@
                 document.getElementById("loadingProgress").style.display = "block";
             }
         });
+    </script>
+
+    <script  type="text/javascript">
+// The following code is based off a toggle menu by @Bradcomp
+// source: https://gist.github.com/Bradcomp/a9ef2ef322a8e8017443b626208999c1
+(function() {
+    var burger = document.querySelector('.burger');
+    var menu = document.querySelector('#'+burger.dataset.target);
+    burger.addEventListener('click', function() {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+    });
+})();
     </script>
 </body>
 </html>
