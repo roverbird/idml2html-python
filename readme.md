@@ -1,6 +1,6 @@
 # Free Online IDML to DOCX, HTML, Text Converter
 
-🔗 Free <a href="https://textvisualization.app/idml2html/">**online converter from InDesign IDML to DOCX, HTML, Text**</a>
+🔗 Free <a href="https://kibervarnost.si/idml2html/">**online converter from InDesign IDML to DOCX, HTML, Text**</a>
 
  IDML2HTML converter works in browser, converts IDML to Docx, HTML or text even without InDesign. 
 
